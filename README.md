@@ -1,5 +1,5 @@
 # nadtelnet
-Home assistant media_player component nadtelnet
+Home assistant nadtelnet media_player component
 
 Use with home assistant like
 media_player:
@@ -15,4 +15,4 @@ media_player:
 
 
 Copy the component to e.g.
-/homeassistant/.homeassistant/custom_components/media_player/nadtelnet.py
+/home/homeassistant/.homeassistant/custom_components/nadtelnet

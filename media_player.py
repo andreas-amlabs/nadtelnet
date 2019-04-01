@@ -2,19 +2,18 @@
 Support for interfacing with NAD receivers through telnet.
 
 For more details about this platform, please refer to the documentation at
-https://home-assistant.io/components/media_player.nadtelnet/
+https://home-assistant.io/components/nadtelnet/
 """
 import logging
 
 import voluptuous as vol
 
 from homeassistant.components.media_player import (
-    SUPPORT_VOLUME_SET,
-    SUPPORT_VOLUME_MUTE, SUPPORT_TURN_ON, SUPPORT_TURN_OFF,
-    SUPPORT_VOLUME_STEP, SUPPORT_SELECT_SOURCE, MediaPlayerDevice,
-    PLATFORM_SCHEMA)
-from homeassistant.const import (
-    CONF_NAME, STATE_OFF, STATE_ON)
+    MediaPlayerDevice, PLATFORM_SCHEMA)
+from homeassistant.components.media_player.const import (
+    SUPPORT_SELECT_SOURCE, SUPPORT_TURN_OFF, SUPPORT_TURN_ON,
+    SUPPORT_VOLUME_MUTE, SUPPORT_VOLUME_SET, SUPPORT_VOLUME_STEP)
+from homeassistant.const import CONF_NAME, STATE_OFF, STATE_ON
 import homeassistant.helpers.config_validation as cv
 
 REQUIREMENTS = ['nad_receiver==0.0.11']
